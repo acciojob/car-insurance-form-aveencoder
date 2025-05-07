@@ -1,15 +1,53 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Accessible Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <form action="#" method="post">
+    
+	<!-- name -->
+    <label for="name">First name:</label><br>
+    <input type="text" id="name"  required><br>
+    
+	<!-- phone number -->
+    <label for="email">Email:</label><br>
+    <input type="Email" id="email"  required><br>
+   
+	<!-- Gender -->
+    <label for="gender_m">male</label>
+    <input type="radio" name="gender" id="gender_m" required>
+	<label for="gender_f">female</label>
+    <input type="radio"  name="gender" id="gender_f" required ><br>
+
+    
+	<!-- multiSelect -->
+    <label for="cars">Car Brands</label>
+    <select name="cars" id="cars" type="select">
+      <option value="BMW">BMW</option>
+      <option value="Audi">Audi</option>
+      <option value="Mercedez">Mercedez</option>
+    </select><br>
+
+	<!-- number  -->
+      <label for="carage">Car Age</label>
+	  <input type="number" id="	carage"required><br>	 
+	
+	  <!-- date  -->
+	<label for="dop">Date of Purchase(dop)</label>
+	<input type="date" id="dop" required><br>
+	
+	<!-- password  -->
+	<label for="password">Password</label>
+	<input type="Password" id="password"  required><br>
+    
+   <!-- button -->
+    <button type="submit">Submit</button>
+  </form>
 
 </body>
 
